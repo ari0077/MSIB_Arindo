@@ -4,7 +4,7 @@
     //tentukan pembelian barangnya apa dan berapa yg beli
 
     let pelanggan = "arindo";
-    let produk = "TV";
+    let produk = "motor";
 
     //structure kendali
     if (produk == 'TV') {
@@ -23,11 +23,15 @@
     let bruto = hargasatuan * jumlahbeli;
 
     //cetak data
+    // jika dia membeli motor maka akan dia mendapatkan diskon
+    let diskon = (produk == 'motor') ? 0.1 * bruto : 0;
+    let hargadiskon = bruto - diskon;
     document.write ( "data pembelian" +
     "<br> pelanggan" + pelanggan +
     "<br> produk yg di beli" + produk +
     "<br> harga satuan" + hargasatuan +
     "<br> jumlah barang yg di beli" + jumlahbeli +
-    "<br> total harga pembelian" + bruto
+    "<br> total harga pembelian" + bruto +
+    "<br> hasil diskon" + hargadiskon
     ) 
 </script>
