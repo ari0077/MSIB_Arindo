@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--pemanggilan id-->
+    <h1 id="coba">hello world</h1>
+    <!--pemanggilan class name-->
+    <h1 class="coba1">hellow world</h1>
+    <!--pemanggilan tag name-->
+    <h2>coba tag</h2>
+    <h1 id="warna">warna merah/h1>
+
+    <script>
+        //ini contoh pembuatan element id
+        var x = document.getElementById("coba").innerHTML = "hellow world baru";
+        //ini contoh pembuatan element class name
+        var y = document.getElementsByClassName("coba1");
+        //ini contoh pembuatan element tag name
+        var z = document.getElementsByTagName("h2");
+
+        var zi = document.getElementById("warna").style.color = "red";
+    </script>
+</body>
+</html>
